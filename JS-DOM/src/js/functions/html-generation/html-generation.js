@@ -1,5 +1,4 @@
-import { HEADER } from './CONST.js';
-import { TABLE } from './CONST.js';
+import { HEADER, TABLE, FOOTER } from './CONST.js';
 
 import { refreshTable } from '../table/refresh-table.js';
 
@@ -11,6 +10,7 @@ export function generateHTML() {
   <main id="main">
     ${TABLE}
   </main> 
+  ${FOOTER}
   `;
 
   refreshTable(externalService.getAllCountries());

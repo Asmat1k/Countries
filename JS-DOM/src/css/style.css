@@ -3,6 +3,7 @@
 
 @import './header.css';
 @import './table.css';
+@import './footer.css';
 
 body {
   font-family: 'Nunito', sans-serif;

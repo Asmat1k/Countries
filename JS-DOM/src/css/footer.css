@@ -1,0 +1,10 @@
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer__body {
+  text-align: center;
+  font-weight: bold;
+
+  padding: 20px 0;
+}

@@ -49,4 +49,14 @@ const TABLE = `
 </table>
 `;
 
-export { HEADER, TABLE };
+const FOOTER = `
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__body">
+      IT-school protei
+    </div>
+  </div>
+</footer>
+`;
+
+export { HEADER, TABLE, FOOTER };
