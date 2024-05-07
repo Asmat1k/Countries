@@ -9,7 +9,7 @@ export function refreshTable(data) {
     <td>${item ? item.name : '-'}</td>
     <td>${item ? item.capital : '-'}</td>
     <td>${item ? item.region : '-'}</td>
-    <td>${item ? Object.values(item.languages).join(', ') : '-'}</td>
+    <td>${item ? (typeof item.languages == 'object' ? Object.values(item.languages).join(', ') : item.languages) : '-'}</td>
     <td>${item ? item.area : '-'}</td>
     <td>
       <img class="table__img" src="${item.flagURL}" alt="country number ${index}">

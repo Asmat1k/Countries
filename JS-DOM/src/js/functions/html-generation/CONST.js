@@ -27,11 +27,21 @@ const TABLE = `
 <table id="table">
   <thead class="table__head">
     <tr class="table__row">
-      <th scope="col">Country</th>
+      <th scope="col">
+        <div class=table__sort>
+          <span>Country</span>
+          <div class="arrow arrow-country"></div>
+        </div>
+      </th>
       <th scope="col">Capital</th>
       <th scope="col">Region</th>
       <th scope="col">Languages</th>
-      <th scope="col">Square, km^2</th>
+      <th scope="col">
+        <div class=table__sort>
+          <span>Square, km^2</span>
+          <div class="arrow"></div>
+        </div>
+      </th>
       <th scope="col">Flag</th>
     </tr>
   </thead>

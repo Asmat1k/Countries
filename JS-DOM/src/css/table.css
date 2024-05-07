@@ -43,6 +43,35 @@ td:first-child {
     transform: scale(1.5);
   }
 }
+.table__sort {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.arrow {
+  width: 30px;
+  height: 30px;
+
+  transition: 0.1s;
+}
+.arrow-active {
+  transform: rotate(180deg);
+}
+.arrow:after {
+  content: '';
+
+  cursor: pointer;
+
+  display: block;
+
+  border-right: solid black;
+  border-top: solid black;
+  width: 7px;
+  height: 7px;
+  transform: translate(12px, 10px) rotate(135deg);
+}
 
 @media (max-width: 550px) {
   th,
