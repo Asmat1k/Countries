@@ -1,11 +1,11 @@
-export function fillDefaultTable() {
+export function refreshTable(data) {
   const TABLE_BODY = document.querySelector('.table__body');
+  TABLE_BODY.innerHTML = '';
 
-  const DATA = externalService.getAllCountries();
-  DATA.forEach((item, index) => {
-    const NODE = document.createElement('tr');
-    NODE.classList.add('table__row');
-    NODE.innerHTML = `
+  data.forEach((item, index) => {
+    const ROW = document.createElement('tr');
+    ROW.classList.add('table__row');
+    ROW.innerHTML = `
     <td>${item ? item.name : '-'}</td>
     <td>${item ? item.capital : '-'}</td>
     <td>${item ? item.region : '-'}</td>
@@ -15,6 +15,6 @@ export function fillDefaultTable() {
       <img class="table__img" src="${item.flagURL}" alt="country number ${index}">
     </td>
     `;
-    TABLE_BODY.appendChild(NODE);
+    TABLE_BODY.appendChild(ROW);
   });
 }
