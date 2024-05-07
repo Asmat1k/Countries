@@ -28,10 +28,11 @@ function addListenerOnSelect(select, mode) {
   });
 }
 
-function createOption(value, inner, select, disabled = false) {
+function createOption(value, inner, select, flag = false) {
   const OPTION = document.createElement('option');
   OPTION.value = value;
-  OPTION.disabled = disabled;
+  OPTION.selected = flag;
+  OPTION.disabled = flag;
   OPTION.innerHTML = inner;
 
   if (select) select.appendChild(OPTION);
