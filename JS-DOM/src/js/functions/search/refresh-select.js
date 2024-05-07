@@ -7,6 +7,7 @@ export function refreshSelect(data, mode) {
   SELECT.innerHTML = '';
 
   if (data.length > 0) {
+    createOption('-1', `Select ${mode}`, SELECT, true);
     data.forEach((item) => {
       createOption(item, item, SELECT);
     });
@@ -27,9 +28,10 @@ function addListenerOnSelect(select, mode) {
   });
 }
 
-function createOption(value, inner, select) {
+function createOption(value, inner, select, disabled = false) {
   const OPTION = document.createElement('option');
   OPTION.value = value;
+  OPTION.disabled = disabled;
   OPTION.innerHTML = inner;
 
   if (select) select.appendChild(OPTION);
