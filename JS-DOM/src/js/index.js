@@ -1,6 +1,4 @@
 import '../css/style.css';
+import { generateHTML } from './files/html-generation.js';
 
-const appRoot = document.getElementById('app-root');
-console.log(appRoot);
-
-console.log(externalService.getAllCountries());
+generateHTML();
