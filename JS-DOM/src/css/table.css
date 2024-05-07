@@ -32,6 +32,17 @@ td:first-child {
 .table__row {
   border-bottom: 1px solid #f0f0f0;
 }
+.table__img {
+  cursor: pointer;
+
+  max-width: 40px;
+  width: 100%;
+  object-fit: cover;
+  transition: 1s;
+  &:hover {
+    transform: scale(1.5);
+  }
+}
 
 @media (max-width: 550px) {
   th,

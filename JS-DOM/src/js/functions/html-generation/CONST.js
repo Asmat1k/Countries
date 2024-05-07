@@ -4,7 +4,7 @@ const HEADER = `
     <div class="header__body">
       <div class="header__radio">
         <div>
-          <input type="radio" id="region" value="region" name="radio" checked />
+          <input type="radio" id="region" value="region" name="radio" />
           <label for="region">Регион</label>
         </div>
         <div>
@@ -14,9 +14,7 @@ const HEADER = `
       </div>
 
       <div class="header__select">
-        <select name="select" id="select">
-
-        </select>
+        <select name="select" id="select"></select>
       </div>
     </div>
   </div>
@@ -31,30 +29,12 @@ const TABLE = `
       <th scope="col">Capital</th>
       <th scope="col">Region</th>
       <th scope="col">Languages</th>
-      <th scope="col">Square</th>
+      <th scope="col">Square, km^2</th>
       <th scope="col">Flag</th>
     </tr>
   </thead>
-  <tbody class="table__body">
-    <tr class="table__row">
-      <td>Russia</td>
-      <td>Moscow</td>
-      <td>Region</td>
-      <td>Russian</td>
-      <td>17 100 000</td>
-      <td>Flag</td>
-    </tr>
-  </tbody>
+  <tbody class="table__body"></tbody>
 </table>
 `;
 
-export function generateHTML() {
-  const appRoot = document.getElementById('app-root');
-
-  appRoot.innerHTML = `
-  ${HEADER}
-  <main id="main">
-    ${TABLE}
-  </main> 
-  `;
-}
+export { HEADER, TABLE };
