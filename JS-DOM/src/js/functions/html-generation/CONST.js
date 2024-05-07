@@ -38,8 +38,8 @@ const TABLE = `
       <th scope="col">Languages</th>
       <th scope="col">
         <div class=table__sort>
-          <span>Square, km^2</span>
-          <div class="arrow"></div>
+          <span>Area, km^2</span>
+          <div class="arrow arrow-area"></div>
         </div>
       </th>
       <th scope="col">Flag</th>
