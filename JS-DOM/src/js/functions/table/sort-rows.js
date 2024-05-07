@@ -1,0 +1,26 @@
+import { parseTable } from './parse-table';
+import { refreshTable } from './refresh-table';
+
+export function sortRows() {
+  const ARROWS = document.querySelectorAll('.arrow');
+  ARROWS.forEach((arrow) => {
+    arrow.addEventListener('click', (event) => {
+      event.target.classList.toggle('arrow-active');
+      const records = parseTable();
+
+      const computedProp = event.target.classList.contains('arrow-country') ? 'name' : 'area';
+      const isArrowActive = event.target.classList.contains('arrow-active');
+      records.sort((a, b) => {
+        if (a[computedProp] < b[computedProp]) {
+          return isArrowActive ? 1 : -1;
+        }
+        if (a[computedProp] > b[computedProp]) {
+          return isArrowActive ? -1 : 1;
+        }
+        return 0;
+      });
+
+      refreshTable(records);
+    });
+  });
+}
