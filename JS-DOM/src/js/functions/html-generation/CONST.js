@@ -5,11 +5,11 @@ const HEADER = `
       <div class="header__radio">
         <div>
           <input type="radio" id="region" value="region" name="radio" />
-          <label for="region">Регион</label>
+          <label for="region">Region</label>
         </div>
         <div>
           <input type="radio" id="language" value="language" name="radio" />
-          <label for="language">Язык</label>
+          <label for="language">Language</label>
         </div>
       </div>
 
