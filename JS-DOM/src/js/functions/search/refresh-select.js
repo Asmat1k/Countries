@@ -1,3 +1,4 @@
+import { deleteAllActiveClasses } from '../table/off-arrows';
 import { refreshTable } from '../table/refresh-table';
 
 export function refreshSelect(data, mode) {
@@ -22,6 +23,7 @@ function addListenerOnSelect(select, mode) {
         ? externalService.getCountryListByRegion(select.value)
         : externalService.getCountryListByLanguage(select.value),
     );
+    deleteAllActiveClasses();
   });
 }
 
