@@ -13,8 +13,10 @@ const HEADER = `
         </div>
       </div>
 
-      <div class="header__select">
-        <select name="select" id="select"></select>
+      <div class="header__select-wrapper">
+        <select name="select" id="select" class="header__select">
+          <option>-<option>
+        </select>
       </div>
     </div>
   </div>
