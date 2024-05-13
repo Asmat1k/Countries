@@ -4,6 +4,7 @@ import { refreshTable } from '../table/refresh-table.js';
 
 export function generateHTML() {
   const appRoot = document.getElementById('app-root');
+  appRoot.innerHTML = '';
 
   appRoot.innerHTML = `
   ${HEADER}

@@ -53,7 +53,12 @@ const FOOTER = `
 <footer class="footer">
   <div class="footer__container">
     <div class="footer__body">
-      IT-school protei
+      <div class="footer__title">
+        IT-school protei
+      </div>
+      <button class="footer__btn">
+        reset
+      </button>
     </div>
   </div>
 </footer>
