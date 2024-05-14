@@ -6,11 +6,11 @@ export function refreshTable(data) {
     const ROW = document.createElement('tr');
     ROW.classList.add('table__row');
     ROW.innerHTML = `
-    <td>${item ? item.name : '-'}</td>
-    <td>${item ? item.capital : '-'}</td>
-    <td>${item ? item.region : '-'}</td>
-    <td>${item ? (typeof item.languages == 'object' ? Object.values(item.languages).join(', ') : item.languages) : '-'}</td>
-    <td>${item ? item.area : '-'}</td>
+    <td>${item.name ? item.name : '-'}</td>
+    <td>${item.capital ? item.capital : '-'}</td>
+    <td>${item.region ? item.region : '-'}</td>
+    <td>${item.languages ? (typeof item.languages == 'object' ? Object.values(item.languages).join(', ') : item.languages) : '-'}</td>
+    <td>${item.area ? item.area : '-'}</td>
     <td>
       <img class="table__img" src="${item.flagURL}" alt="country number ${index}">
     </td>

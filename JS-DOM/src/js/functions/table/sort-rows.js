@@ -3,6 +3,7 @@ import { refreshTable } from './refresh-table.js';
 
 export function sortRows() {
   const ARROWS = document.querySelectorAll('.arrow');
+
   ARROWS.forEach((arrow) => {
     arrow.addEventListener('click', (event) => {
       event.target.classList.toggle('arrow-active');

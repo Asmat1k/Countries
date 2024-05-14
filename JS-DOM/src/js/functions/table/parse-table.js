@@ -1,8 +1,8 @@
 export function parseTable() {
-  const rows = document.querySelectorAll('.table__body > .table__row');
+  const ROWS = document.querySelectorAll('.table__body > .table__row');
   const records = [];
 
-  rows.forEach((row) => {
+  ROWS.forEach((row) => {
     const CELLS = row.querySelectorAll('td');
 
     const record = {
