@@ -1,3 +1,4 @@
+import { deleteAllActiveClasses } from '../table/off-arrows';
 import { refreshTable } from '../table/refresh-table';
 import { refreshSelect } from './refresh-select';
 
@@ -12,6 +13,8 @@ export function pickRadioBtn() {
         if (lastActiveBtnId) {
           refreshTable(externalService.getAllCountries());
         }
+
+        deleteAllActiveClasses();
 
         switch (item.id) {
           case 'region': {

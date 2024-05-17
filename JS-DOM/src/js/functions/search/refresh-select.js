@@ -7,7 +7,7 @@ export function refreshSelect(data, mode) {
   SELECT.innerHTML = '';
 
   if (data.length > 0) {
-    createOption('-1', `Select ${mode}`, SELECT, true);
+    createOption('default', `Select ${mode}`, SELECT, true);
     data.forEach((item) => {
       createOption(item, item, SELECT);
     });

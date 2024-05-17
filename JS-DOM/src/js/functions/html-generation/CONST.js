@@ -15,7 +15,7 @@ const HEADER = `
 
       <div class="header__select-wrapper">
         <select name="select" id="select" class="header__select">
-          <option>-<option>
+          <option>default<option>
         </select>
       </div>
     </div>

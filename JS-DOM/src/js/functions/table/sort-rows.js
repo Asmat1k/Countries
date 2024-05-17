@@ -70,7 +70,7 @@ function getNotSortedPage() {
   const selectedRadio = document.querySelector('input[type="radio"]:checked');
   const selectedValue = document.querySelector('#select').value;
 
-  if (!selectedRadio) {
+  if (!selectedRadio || selectedValue == 'default') {
     return externalService.getAllCountries();
   }
 
