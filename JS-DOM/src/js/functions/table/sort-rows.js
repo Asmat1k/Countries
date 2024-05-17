@@ -4,7 +4,7 @@ import { refreshTable } from './refresh-table.js';
 
 export function sortRows() {
   const ARROWS = document.querySelectorAll('.arrow');
-  let isLastModUp = false;
+  let isLastArrowModeUp = false;
 
   ARROWS.forEach((arrow) => {
     arrow.addEventListener('click', (event) => {
@@ -20,16 +20,16 @@ export function sortRows() {
       switch (currentArrowState) {
         case 'arrow-default':
           clearClasses(event.target);
-          event.target.classList.add(isLastModUp ? 'arrow-down' : 'arrow-up');
-          customSort(records, !isLastModUp, computedProp);
+          event.target.classList.add(isLastArrowModeUp ? 'arrow-down' : 'arrow-up');
+          customSort(records, !isLastArrowModeUp, computedProp);
           break;
         case 'arrow-up':
           setArrowToDefault(event.target);
-          isLastModUp = true;
+          isLastArrowModeUp = true;
           break;
         case 'arrow-down':
           setArrowToDefault(event.target);
-          isLastModUp = false;
+          isLastArrowModeUp = false;
           break;
         default:
           break;
@@ -50,7 +50,7 @@ function clearClasses(target) {
 }
 
 function setArrowToDefault(target) {
-  clearClasses(event.target);
+  clearClasses(target);
   target.classList.add('arrow-default');
 }
 
@@ -81,4 +81,6 @@ function getNotSortedPage() {
   } else if (selectedMode === 'language') {
     return externalService.getCountryListByLanguage(selectedValue);
   }
+
+  return externalService.getAllCountries();
 }
