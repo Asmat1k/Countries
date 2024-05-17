@@ -30,7 +30,7 @@ const TABLE = `
       <th scope="col">
         <div class=table__sort>
           <span>Country</span>
-          <div class="arrow arrow-country"></div>
+          <div class="arrow arrow-country arrow-default"></div>
         </div>
       </th>
       <th scope="col">Capital</th>
@@ -39,7 +39,7 @@ const TABLE = `
       <th scope="col">
         <div class=table__sort>
           <span>Area, km^2</span>
-          <div class="arrow arrow-area"></div>
+          <div class="arrow arrow-area arrow-default"></div>
         </div>
       </th>
       <th scope="col">Flag</th>

@@ -55,10 +55,16 @@ td:first-child {
   width: 30px;
   height: 30px;
 
-  transition: 0.1s;
+  transition: 0.2s;
 }
-.arrow-active {
+.arrow-default {
+  transform: rotate(90deg);
+}
+.arrow-up {
   transform: rotate(180deg);
+}
+.arrow-down {
+  transform: rotate(0deg);
 }
 .arrow:after {
   content: '';
