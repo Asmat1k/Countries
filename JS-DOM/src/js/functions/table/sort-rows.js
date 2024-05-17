@@ -1,3 +1,4 @@
+import { disableAnotherArrow } from './off-arrows.js';
 import { parseTable } from './parse-table';
 import { refreshTable } from './refresh-table.js';
 
@@ -6,6 +7,8 @@ export function sortRows() {
 
   ARROWS.forEach((arrow) => {
     arrow.addEventListener('click', (event) => {
+      disableAnotherArrow(arrow.classList[1].includes('area') ? 'country' : 'area');
+      
       event.target.classList.toggle('arrow-active');
       const records = parseTable();
 
