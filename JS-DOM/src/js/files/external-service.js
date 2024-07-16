@@ -16,7 +16,7 @@ const externalService = {};
       region: _regionsList.eu,
       area: 93028,
       capital: 'Budapest',
-      languages: {hun: 'Hungarian'},
+      languages: { hun: 'Hungarian' },
     },
     {
       name: 'Switzerland',
@@ -37,7 +37,7 @@ const externalService = {};
       region: _regionsList.eu,
       area: 207600,
       capital: 'Minsk',
-      languages: {bel: 'Belarusian', rus: 'Russian'},
+      languages: { bel: 'Belarusian', rus: 'Russian' },
     },
     {
       name: 'France',
@@ -45,7 +45,7 @@ const externalService = {};
       region: _regionsList.eu,
       area: 551695,
       capital: 'Paris',
-      languages: {fra: 'French'},
+      languages: { fra: 'French' },
     },
     {
       name: 'United Kingdom',
@@ -53,7 +53,7 @@ const externalService = {};
       region: _regionsList.eu,
       area: 242900,
       capital: 'London',
-      languages: {eng: 'English'},
+      languages: { eng: 'English' },
     },
     {
       name: 'Croatia',
@@ -61,7 +61,7 @@ const externalService = {};
       region: _regionsList.eu,
       area: 56594,
       capital: 'Zagreb',
-      languages: {hrv: 'Croatian'},
+      languages: { hrv: 'Croatian' },
     },
     {
       name: 'Mexico',
@@ -69,7 +69,7 @@ const externalService = {};
       region: _regionsList.na,
       area: 1964375,
       capital: 'Mexico City',
-      languages: {spa: 'Spanish'},
+      languages: { spa: 'Spanish' },
     },
     {
       name: 'Canada',
@@ -77,7 +77,7 @@ const externalService = {};
       region: _regionsList.na,
       area: 9984670,
       capital: 'Ottawa',
-      languages: {eng: 'English', fra: 'French'},
+      languages: { eng: 'English', fra: 'French' },
     },
     {
       name: 'United States',
@@ -85,7 +85,7 @@ const externalService = {};
       region: _regionsList.na,
       area: 9372610,
       capital: 'Washington D.C.',
-      languages: {eng: 'English'},
+      languages: { eng: 'English' },
     },
     {
       name: 'Argentina',
@@ -93,7 +93,7 @@ const externalService = {};
       region: _regionsList.sa,
       area: 2780400,
       capital: 'Buenos Aires',
-      languages: {grn: 'Guaran\u00ed', spa: 'Spanish'},
+      languages: { grn: 'Guaran\u00ed', spa: 'Spanish' },
     },
     {
       name: 'Brazil',
@@ -101,7 +101,7 @@ const externalService = {};
       region: _regionsList.sa,
       area: 8515767,
       capital: 'Bras\u00edlia',
-      languages: {por: 'Portuguese'},
+      languages: { por: 'Portuguese' },
     },
     {
       name: 'Bolivia',
@@ -122,7 +122,7 @@ const externalService = {};
       region: _regionsList.sa,
       area: 406752,
       capital: 'Asunci\u00f3n',
-      languages: {grn: 'Guaran\u00ed', spa: 'Spanish'},
+      languages: { grn: 'Guaran\u00ed', spa: 'Spanish' },
     },
     {
       name: 'Egypt',
@@ -130,7 +130,7 @@ const externalService = {};
       region: _regionsList.af,
       area: 1002450,
       capital: 'Cairo',
-      languages: {ara: 'Arabic'},
+      languages: { ara: 'Arabic' },
     },
     {
       name: 'Tunisia',
@@ -138,7 +138,7 @@ const externalService = {};
       region: _regionsList.af,
       area: 163610,
       capital: 'Tunis',
-      languages: {ara: 'Arabic'},
+      languages: { ara: 'Arabic' },
     },
     {
       name: 'South Sudan',
@@ -146,7 +146,7 @@ const externalService = {};
       region: _regionsList.af,
       area: 619745,
       capital: 'Juba',
-      languages: {eng: 'English'},
+      languages: { eng: 'English' },
     },
     {
       name: 'Saudi Arabia',
@@ -154,7 +154,7 @@ const externalService = {};
       region: _regionsList.as,
       area: 2149690,
       capital: 'Riyadh',
-      languages: {ara: 'Arabic'},
+      languages: { ara: 'Arabic' },
     },
     {
       name: 'Turkey',
@@ -162,7 +162,7 @@ const externalService = {};
       region: _regionsList.as,
       area: 783562,
       capital: 'Ankara',
-      languages: {tur: 'Turkish'},
+      languages: { tur: 'Turkish' },
     },
     {
       name: 'Algeria',
@@ -170,7 +170,7 @@ const externalService = {};
       region: _regionsList.af,
       area: 2381741,
       capital: 'Algiers',
-      languages: {ara: 'Arabic'},
+      languages: { ara: 'Arabic' },
     },
     {
       name: 'China',
@@ -178,7 +178,7 @@ const externalService = {};
       region: _regionsList.as,
       area: 9706961,
       capital: 'Beijing',
-      languages: {cmn: 'Mandarin'},
+      languages: { cmn: 'Mandarin' },
     },
     {
       name: 'Japan',
@@ -186,7 +186,7 @@ const externalService = {};
       region: _regionsList.as,
       area: 377930,
       capital: 'Tokyo',
-      languages: {jpn: 'Japanese'},
+      languages: { jpn: 'Japanese' },
     },
     {
       name: 'North Korea',
@@ -194,7 +194,7 @@ const externalService = {};
       region: _regionsList.as,
       area: 120538,
       capital: 'Pyongyang',
-      languages: {kor: 'Korean'},
+      languages: { kor: 'Korean' },
     },
     {
       name: 'South Korea',
@@ -202,7 +202,7 @@ const externalService = {};
       region: _regionsList.as,
       area: 100210,
       capital: 'Seoul',
-      languages: {kor: 'Korean'},
+      languages: { kor: 'Korean' },
     },
     {
       name: 'Australia',
@@ -210,7 +210,7 @@ const externalService = {};
       region: _regionsList.oc,
       area: 7692024,
       capital: 'Canberra',
-      languages: {eng: 'English'},
+      languages: { eng: 'English' },
     },
     {
       name: 'New Zealand',
@@ -226,12 +226,9 @@ const externalService = {};
     },
   ];
   module.getAllCountries = () => [..._countriesList];
-  module.getCountryListByRegion = (region) =>
-    _countriesList.filter((country) => country.region === region);
+  module.getCountryListByRegion = (region) => _countriesList.filter((country) => country.region === region);
   module.getCountryListByLanguage = (language) =>
-    _countriesList.filter((country) =>
-      Object.values(country.languages).includes(language)
-    );
+    _countriesList.filter((country) => Object.values(country.languages).includes(language));
   module.getRegionsList = () => Object.values(_regionsList);
   module.getLanguagesList = () => [
     ..._countriesList.reduce((languagesList, country) => {
@@ -241,3 +238,5 @@ const externalService = {};
     }, new Set()),
   ];
 })(externalService);
+
+window.externalService = externalService;

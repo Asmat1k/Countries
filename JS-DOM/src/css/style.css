@@ -1,0 +1,17 @@
+@import './null.css';
+@import './fonts.css';
+
+@import './header.css';
+@import './table.css';
+@import './footer.css';
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  padding: 0 15px;
+}
+@media (max-width: 550px) {
+  * {
+    font-size: 12px;
+  }
+}

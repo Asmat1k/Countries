@@ -1,0 +1,89 @@
+.header {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+.header__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__radio {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.header__select {
+  display: none;
+
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  text-align: left;
+
+  padding: 10px;
+  min-width: 140px;
+}
+.header__select-shown {
+  display: block;
+}
+
+/* Кастомный радио */
+[type='radio']:checked,
+[type='radio']:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+[type='radio']:checked + label,
+[type='radio']:not(:checked) + label {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+
+  padding-left: 25px;
+  line-height: 20px;
+  color: black;
+}
+[type='radio']:checked + label:before,
+[type='radio']:not(:checked) + label:before {
+  content: '';
+
+  position: absolute;
+  top: 2px;
+  left: 5px;
+
+  border: 1px solid #e1e1e1;
+  border-radius: 100%;
+  background: transparent;
+
+  width: 15px;
+  height: 15px;
+}
+[type='radio']:checked + label:after,
+[type='radio']:not(:checked) + label:after {
+  content: '';
+
+  position: absolute;
+  top: 4px;
+  left: 7px;
+
+  border-radius: 100%;
+  background: #1677ff;
+
+  width: 11px;
+  height: 11px;
+
+  transition: all 0.2s ease;
+}
+[type='radio']:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type='radio']:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (max-width: 550px) {
+  #select {
+    padding: 6px;
+  }
+}
